@@ -263,19 +263,6 @@ img.show{
   border-bottom-right-radius: 3px;
 }
 
-/*.menu {
-width: 300px;
-height: 300px;
-background-color: red;
-z-index: 1000;
-position: fixed;
-
-left: 195px;
-}
-
-nav#menu {
-margin-top: -57px;
-}*/
 .hide{
   display: none;
 }
@@ -318,11 +305,10 @@ img.hamburger {
 
 @media (max-width: 703px){
   .sale_img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 42%;
     margin-top: 8px;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
+    margin-left: 25px; 
   }
   
   .large_nav {
@@ -334,40 +320,65 @@ img.hamburger {
   }
 }
 
+@media (max-width: 662px){
+  .sale_img {
+    margin-left: 22px; 
+  }
+}
+
+@media (max-width: 586px){
+  .sale_img {
+    margin-left: 20px; 
+  }
+}
+
+
 @media (max-width: 554px){
-/*Add hamburger here on sticky header and large header*/
-.footer_logo{
-margin-bottom: 0;
+  .sale_img {
+    margin-left: 37px;
+    width: 80%;
+  }
+  
+  .footer_logo{
+    margin-bottom: 0;
+  }
+
+  .large{
+    position: static;
+    margin-right: 220px;
+  }
+
+  .small{
+    position: static;
+    margin-right: 397px;
+  }
+
+  .sticky_header{
+    display: none;
+  }
+
+  .small_nav{
+    display: none;
+  }
+
+  #header_logo{
+    float: left;
+  }
+
+  .large_header{
+    height: 143px;
+  }
+
+  .large_nav li{
+    display: list-item;
+    position: relative;
+    top: -88px;
+    left: 140px;
+    margin-right: 10px;
+  }
 }
 
-.large{
-position: static;
-margin-right: 220px;
-}
-
-.small{
-position: static;
-margin-right: 397px;
-}
-
-.sticky_header{
-
-}
-
-.small_nav{
-display: none;
-}
-
-.large_nav{
-display: none;
-}
-
-img.hamburger {
-  float: right;
-  width: 9%;
-  margin-top: -94px;
-  margin-right: 14px;
-  display: block;
-  opacity: 0.9;
-}
+@media (max-width: 511px){
+  .sale_img {
+    margin-left: 34px;  }
 }

@@ -45,18 +45,18 @@ showCurrent();
 })();
 
 // Hamburger menu ----------------------------
-
-function hideMenu(){
-  document.getElementById("menu").className = 'hide';
-}
-
-function showMenu(){
-  document.getElementById("menu").className = 'visible';
-}
-
-hideMenu();
-
-document.getElementsByClassName("hamburger").toggle = showMenu;
-// document.getElementsByClassName("hamburger").onclick = hideMenu;
-
+//
+// function hideMenu(){
+//   document.getElementById("menu").className = 'hide';
+// }
+//
+// function showMenu(){
+//   document.getElementById("menu").className = 'visible';
+// }
+//
+// hideMenu();
+//
+// document.getElementsByClassName("hamburger").toggle = showMenu;
+// // document.getElementsByClassName("hamburger").onclick = hideMenu;
+//
 
