@@ -263,6 +263,12 @@ img.show{
   border-bottom-right-radius: 3px;
 }
 
+.hide{
+  display: none;
+}
+
+/*Media Queries*/
+
 @media (max-width: 1063px){
   .sale_img {
     width: 30.5%;
