@@ -46,16 +46,17 @@ showCurrent();
 
 // Hamburger menu ----------------------------
 
-function showMenu(){
-   document.getElementById("menu").style.top = 0 + "px";   
+function hideMenu(){
+  document.getElementById("menu").className = 'hide';
 }
 
-function hideMenu(){
-  document.getElementById("menu").style.top = "-" + 300 + "px";  
+function showMenu(){
+  document.getElementById("menu").className = 'visible';
 }
 
 hideMenu();
 
-document.getElementsByClassName("hamburger").onclick = showMenu;
+document.getElementsByClassName("hamburger").toggle = showMenu;
+// document.getElementsByClassName("hamburger").onclick = hideMenu;
 
-document.getElementsByClassName("hamburger").ondblclick = hideMenu;
+
