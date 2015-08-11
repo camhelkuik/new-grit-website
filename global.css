@@ -353,20 +353,24 @@ img.hamburger {
     margin-right: 397px;
   }
 
-  .sticky_header{
-    display: none;
+  .small_nav{
+    left: 33px;
   }
 
-  .small_nav{
-    display: none;
+  .small_nav li {
+    font-size: 20px;
+    margin-right: -25px;
   }
 
   #header_logo{
     float: left;
   }
 
+  #header {
+    z-index: 10;
+  }
   .large_header{
-    height: 143px;
+    height: 124px;
   }
 
   .large_nav li{
@@ -375,10 +379,12 @@ img.hamburger {
     top: -88px;
     left: 140px;
     margin-right: 10px;
+    font-size: 20px;
+    
   }
 }
 
 @media (max-width: 511px){
   .sale_img {
     margin-left: 34px;  }
-}
+  }
