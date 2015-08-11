@@ -43,3 +43,19 @@ showCurrent();
 }, false);
  
 })();
+
+// Hamburger menu ----------------------------
+
+function showMenu(){
+   document.getElementById("menu").style.top = 0 + "px";   
+}
+
+function hideMenu(){
+  document.getElementById("menu").style.top = "-" + 300 + "px";  
+}
+
+hideMenu();
+
+document.getElementsByClassName("hamburger").onclick = showMenu;
+
+document.getElementsByClassName("hamburger").ondblclick = hideMenu;
