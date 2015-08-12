@@ -1,21 +1,19 @@
 // Sticky header--------------------------------
   
-if (matchMedia) {
+// if (matchMedia) {
   var mq = window.matchMedia("(max-width: 554px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
-}
+  // }
   
-// media query change
-function WidthChange(mq) {
+  // media query change
+  if function WidthChange(mq) {
 
-  var nav =  document.getElementById("sticky_nav");
-  var header = document.getElementById("sticky_header");
+    var nav =  document.getElementById("sticky_nav");
+    var header = document.getElementById("sticky_header");
 
-  window.onscroll = shrink_header;
+    window.onscroll = shrink_header;
     
-
-  if (mq.matchMedia) {
     // window width is at least 500px
     function shrink_header() {
       if (window.pageYOffset>115) {
