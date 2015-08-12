@@ -307,12 +307,20 @@ img.hamburger {
     width: 100%;
     margin-bottom: 5px;
   }
+  
+  .shop_img {
+      left: -23px;
+  }
 }
 
 @media (max-width: 759px){
   .sale_img {
     width: 28.5%;
     margin-left: 16.5px;
+  }
+  
+  .shop_img {
+      left: -19px;
   }
 }
 
@@ -322,6 +330,10 @@ img.hamburger {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 25px; 
+  }
+  
+  .shop_img {
+      left: -17px;
   }
   
   .large_nav {
@@ -350,6 +362,10 @@ img.hamburger {
   .sale_img {
     margin-left: 37px;
     width: 80%;
+  }
+  
+  .shop_img {
+      left: -14px;
   }
   
   .footer_logo{
