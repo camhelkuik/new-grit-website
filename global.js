@@ -5,15 +5,14 @@
   mq.addListener(WidthChange);
   WidthChange(mq);
   // }
+  var nav =  document.getElementById("sticky_nav");
+  var header = document.getElementById("sticky_header");
+  
+   window.onscroll = shrink_header;
   
   // media query change
-  if function WidthChange(mq) {
+function WidthChange(mq) {
 
-    var nav =  document.getElementById("sticky_nav");
-    var header = document.getElementById("sticky_header");
-
-    window.onscroll = shrink_header;
-    
     // window width is at least 500px
     function shrink_header() {
       if (window.pageYOffset>115) {
@@ -26,7 +25,7 @@
       }
     }
   }
-  else {
+    
     // window width is less than 500px
     function shrink_header() {
       if (window.pageYOffset>115) {
@@ -38,8 +37,7 @@
         nav.style.top = "-150px";
       }
     }
-  }
-}
+
 
 // Sliding images----------------------------
 (function(){
