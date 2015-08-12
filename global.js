@@ -1,41 +1,69 @@
 // Sticky header--------------------------------
-  
-  var mq = window.matchMedia("(max-width: 554px)");
-  mq.addListener(WidthChange);
-  
-  var nav =  document.getElementById("sticky_nav");
-  var header = document.getElementById("sticky_header");
-  
-   window.onscroll = shrink_header;
-  
-  // media query change
-// function WidthChange(mq) {
 
-    // window width is at least 500px
-      function shrink_header() {
-        if (WidthChange(mq)) {
-      if (window.pageYOffset>115) {
-        header.style.top = "0px";
-        nav.style.top = "-55px";
-      }
-      if (window.pageYOffset<115) {
-        header.style.top = "-150px";
-        nav.style.top = "-150px";
-      }
+var nav =  document.getElementById("sticky_nav");
+var header = document.getElementById("sticky_header");
+
+window.onscroll = shrink_header;
+
+
+if (window.matchMedia('(max-width: 554px)').matches)
+{
+    // do functionality on screens smaller than 554px
+  function shrink_header() {
+    if (window.pageYOffset>115) {
+      header.style.top = "0px";
+      nav.style.top = "-55px";
     }
-    else{
-    
-    // window width is less than 500px
-      if (window.pageYOffset>115) {
-        header.style.top = "0px";
-        nav.style.top = "-29px";
-      }
-      if (window.pageYOffset<115) {
-        header.style.top = "-150px";
-        nav.style.top = "-150px";
-      }
+    if (window.pageYOffset<115) {
+      header.style.top = "-150px";
+      nav.style.top = "-150px";
     }
   }
+}
+
+if (window.matchMedia('(min-width: 554px)').matches)
+{
+    // do functionality on screens smaller than 554px
+  function shrink_header() {
+    if (window.pageYOffset>115) {
+      header.style.top = "0px";
+      nav.style.top = "-29px";
+    }
+    if (window.pageYOffset<115) {
+      header.style.top = "-150px";
+      nav.style.top = "-150px";
+    }
+  }
+}
+
+// if($(window).width()>554) {
+//   // change functionality for larger screens
+//   function shrink_header() {
+//     if (window.pageYOffset>115) {
+//       header.style.top = "0px";
+//       nav.style.top = "-29px";
+//     }
+//     if (window.pageYOffset<115) {
+//       header.style.top = "-150px";
+//       nav.style.top = "-150px";
+//     }
+//   }
+// }
+
+// if($(window).width()<554){
+//   // change functionality for smaller screens
+//   function shrink_header() {
+//     if (window.pageYOffset>115) {
+//       header.style.top = "0px";
+//       nav.style.top = "-55px";
+//     }
+//     if (window.pageYOffset<115) {
+//       header.style.top = "-150px";
+//       nav.style.top = "-150px";
+//     }
+//   }
+// }
+
 
 // Sliding images----------------------------
 (function(){
