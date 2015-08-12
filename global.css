@@ -154,7 +154,20 @@ h1 {
 }
 
 .shop {
-  height: 250px;
+  width: 100%;
+  height: auto;
+  
+}
+
+#shop h1{
+  margin-bottom: 0;
+}
+.shop_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 15px;
+  left: -30px;
 }
 
 .light_font{
