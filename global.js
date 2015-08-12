@@ -5,10 +5,8 @@ var header = document.getElementById("sticky_header");
 
 window.onscroll = shrink_header;
 
-if (window.matchMedia('(max-width: 554px)').matches)
-{
-    // do functionality on screens smaller than 554px
-  function shrink_header() {
+function shrink_header(){
+  if (window.matchMedia('(max-width: 554px)').matches){
     if (window.pageYOffset>115) {
       header.style.top = "0px";
       nav.style.top = "-55px";
@@ -18,12 +16,8 @@ if (window.matchMedia('(max-width: 554px)').matches)
       nav.style.top = "-150px";
     }
   }
-}
-
-if (window.matchMedia('(min-width: 554px)').matches)
-{
-    // do functionality on screens smaller than 554px
-  function shrink_header() {
+  
+  if (window.matchMedia('(min-width: 554px)').matches){
     if (window.pageYOffset>115) {
       header.style.top = "0px";
       nav.style.top = "-29px";
@@ -34,7 +28,6 @@ if (window.matchMedia('(min-width: 554px)').matches)
     }
   }
 }
-
 
 // Sliding images----------------------------
 (function(){
