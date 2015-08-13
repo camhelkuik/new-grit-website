@@ -168,6 +168,7 @@ h1 {
   position: relative;
   top: 15px;
   left: -30px;
+  opacity: 0.9;
 }
 
 .light_font{
